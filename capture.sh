@@ -4,8 +4,13 @@
 Updated: September 2016
 Updated: August 2019
 
-#Name: Forenzix Investigation Script to start and automate the investigation Script for bash (using qemu). Updated script to only capture the image and verify it.  The conversion and virtualization process is encapsulated using the virtualize.sh script.  That portion of the functionality has been commented out in this script for the short term.
-
+#Name: Forenzix Investigation Script to:
+#1. hash an existing hard disk
+#2. capture the existing hard disk using dd
+#3. hash the capture for verification
+#4. Convert the raw capture of the hard disk to a vmdk virtual hard disk format
+#5. Create a VM from using the newly created vmdk
+#6. Start the VM for inspection of traffic and function
 
 #This script was designed for Forenzix (a Linux distro under development to document and capture an evidence disk, then virtualize it and connect it to an isolated or simulated information gathering tool and observe the suspected malware-infected machine's operation. 
 
